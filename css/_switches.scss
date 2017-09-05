@@ -6,11 +6,12 @@ $height: $width/2;
 
 .toggle{
   cursor: pointer;
+  font-weight: bold;
   .toggle-control{
     transition: $transition;
     width: $width;
     height: $height;
-    display: block;
+    display: inline-block;
     //border: 2px solid $color_checkbox_default;
     border-radius: $height;
     background-color: rgba(black,.06);

@@ -238,12 +238,13 @@
     margin-left: 91.66667%; } }
 
 .toggle {
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: bold; }
   .toggle .toggle-control {
     transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
     width: 28px;
     height: 14px;
-    display: block;
+    display: inline-block;
     border-radius: 14px;
     background-color: rgba(0, 0, 0, 0.06);
     position: relative; }
@@ -296,7 +297,12 @@ main {
     .card-img .img-resp:hover {
       transform: scale(1.1); }
 
+.card-img-block {
+  display: flex;
+  flex-direction: column; }
+
 .card-block {
+  flex: 1;
   padding: 15px; }
 
 .card-footer {
@@ -307,15 +313,14 @@ main {
   border: none;
   outline: none;
   display: inline-block;
-  line-height: 52px;
-  padding: 0 16px;
+  padding: 8px 16px;
   color: #000;
   background: transparent;
   cursor: pointer; }
   .btn:hover {
-    background: gray; }
+    background: rgba(0, 0, 0, 0.1); }
   .btn:active {
-    background: black; }
+    background: rgba(0, 0, 0, 0.2); }
 
 .img-resp {
   max-width: 100%; }

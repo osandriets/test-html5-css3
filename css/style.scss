@@ -45,7 +45,12 @@ main{
 		}
 	}
 }
+.card-img-block{
+	display: flex;
+	flex-direction: column;
+}
 .card-block{
+	flex: 1;
 	padding: 15px;
 }
 .card-footer{
@@ -58,16 +63,15 @@ main{
 	outline: none;
 
 	display: inline-block;
-	line-height: 52px;
-	padding: 0 16px;
+	padding: 8px 16px;
 	color: #000;
 	background: transparent;
 	cursor: pointer;
 	&:hover{
-		background: gray;
+		background: rgba(0,0,0,.1);
 	}
 	&:active{
-		background: black;
+		background: rgba(0,0,0,.2);
 	}
 }
 
