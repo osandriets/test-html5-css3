@@ -1,0 +1,79 @@
+/* reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* variables */
+$breakpoints:("": "0px", "s":"480px", "m":"768px", "l":"980px");
+
+@import "grid";
+@import "switches";
+
+body {
+	//background: url("../img/0.png") no-repeat top center;
+	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	color: #888888;
+}
+main{
+	margin: 1rem;
+	max-width: 100%;
+}
+
+.card{
+	border: 1px solid #f5f5f5;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+	transition: box-shadow 0.2s ease;
+	&:hover{
+		box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.12), 0px 8px 8px 0px rgba(0,0,0,0.24);
+	}
+}
+.card-img{
+	background: gainsboro;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	.img-resp{
+		transition: 0.2s ease;
+		min-width: 100%;
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}
+.card-block{
+	padding: 15px;
+}
+.card-footer{
+	padding: 15px;
+	border-top: 1px solid #E0E0E0;
+}
+
+.btn {
+	border: none;
+	outline: none;
+
+	display: inline-block;
+	line-height: 52px;
+	padding: 0 16px;
+	color: #000;
+	background: transparent;
+	cursor: pointer;
+	&:hover{
+		background: gray;
+	}
+	&:active{
+		background: black;
+	}
+}
+
+.img-resp{
+	max-width: 100%;
+}
+p{
+	margin-bottom: 10px;
+}

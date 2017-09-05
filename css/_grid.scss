@@ -1,0 +1,20 @@
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+@each $name,$break in $breakpoints{
+  .col{
+    @media screen and (min-width: $break){
+      @for $i from 1 through 11{
+        $width: 100%/12 * $i;
+        &-#{$name}-#{$i}{
+          flex-basis: $width;
+          margin-bottom: 0;
+        }
+        &-offset-#{$name+$i}{
+          margin-left: $width;
+        }
+      }
+    }
+  }
+}
