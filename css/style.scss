@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 /* reset */
 *{
 	margin: 0;
@@ -12,14 +14,16 @@ $breakpoints:("": "0px", "s":"480px", "m":"768px", "l":"980px");
 @import "switches";
 
 body {
-	//background: url("../img/0.png") no-repeat top center;
 	font-size: 1rem;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #888888;
 }
 main{
 	margin: 1rem;
 	max-width: 100%;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding-top: 20px;
 }
 
 .card{
@@ -51,22 +55,23 @@ main{
 }
 .card-block{
 	flex: 1;
-	padding: 15px;
+	padding: 25px;
 }
 .card-footer{
-	padding: 15px;
+	padding: 10px;
 	border-top: 1px solid #E0E0E0;
 }
 
 .btn {
 	border: none;
 	outline: none;
-
 	display: inline-block;
-	padding: 8px 16px;
+	padding: 9px 14px;
+	font-size: 14px;
 	color: #000;
 	background: transparent;
 	cursor: pointer;
+	text-transform: uppercase;
 	&:hover{
 		background: rgba(0,0,0,.1);
 	}
@@ -75,9 +80,18 @@ main{
 	}
 }
 
-.img-resp{
+.img-resp {
 	max-width: 100%;
 }
-p{
-	margin-bottom: 10px;
+
+h1{
+	font-size: 32px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+p {
+	font-size: 13px;
+	line-height: 23px;
+	color: #8a8e91;
+	margin-bottom: 24px;
 }

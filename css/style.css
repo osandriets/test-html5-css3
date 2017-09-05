@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
 /* reset */
 * {
   margin: 0;
@@ -239,24 +240,27 @@
 
 .toggle {
   cursor: pointer;
-  font-weight: bold; }
+  font-size: 13px; }
   .toggle .toggle-control {
     transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-    width: 28px;
-    height: 14px;
+    width: 40px;
+    height: 20px;
     display: inline-block;
-    border-radius: 14px;
-    background-color: rgba(0, 0, 0, 0.06);
+    float: left;
+    margin-right: 18px;
+    border-radius: 20px;
+    background-color: #d5d5d5;
+    border: 1px solid #d5d5d5;
     position: relative; }
     .toggle .toggle-control:after {
       transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
       content: "";
-      width: 14px;
-      height: 14px;
+      width: 18px;
+      height: 18px;
       display: block;
       background-color: #fff;
       border-radius: 50%;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 3px 2px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(0, 0, 0, 0.4);
       position: absolute;
       top: 0;
       left: 0; }
@@ -266,16 +270,19 @@
       border-color: #289aec;
       background-color: #289aec; }
       .toggle input:checked + .toggle-control:after {
-        left: 14px; }
+        left: 20px; }
 
 body {
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #888888; }
 
 main {
   margin: 1rem;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-top: 20px; }
 
 .card {
   border: 1px solid #f5f5f5;
@@ -303,20 +310,22 @@ main {
 
 .card-block {
   flex: 1;
-  padding: 15px; }
+  padding: 25px; }
 
 .card-footer {
-  padding: 15px;
+  padding: 10px;
   border-top: 1px solid #E0E0E0; }
 
 .btn {
   border: none;
   outline: none;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 9px 14px;
+  font-size: 14px;
   color: #000;
   background: transparent;
-  cursor: pointer; }
+  cursor: pointer;
+  text-transform: uppercase; }
   .btn:hover {
     background: rgba(0, 0, 0, 0.1); }
   .btn:active {
@@ -325,7 +334,15 @@ main {
 .img-resp {
   max-width: 100%; }
 
+h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 20px; }
+
 p {
-  margin-bottom: 10px; }
+  font-size: 13px;
+  line-height: 23px;
+  color: #8a8e91;
+  margin-bottom: 24px; }
 
 /*# sourceMappingURL=style.css.map */
